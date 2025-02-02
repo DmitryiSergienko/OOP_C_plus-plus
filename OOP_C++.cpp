@@ -17,5 +17,18 @@ using namespace std;
 int main() {
 	SetConsoleCP(1251);	SetConsoleOutputCP(1251);
 
-	
+	string line;
+	vector<string> Text;
+	fstream textFile("Text.txt");
+
+	if (!textFile.is_open()) { cout << "Не удалось открыть файл!" << endl; }
+
+	while (getline(textFile, line)) {
+		Text.push_back(line);
+	}
+	textFile.close();
+
+	for (int i{ 0 }; i < Text.size(); i++) {
+		cout << Text[i] << endl;
+	}
 }
