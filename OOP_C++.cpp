@@ -27,7 +27,7 @@ int main() {
 		for (int i{ 0 }; i < word.size(); i++) {
 			if (tryWord.size() == 1 && tryWord[0] == word[i]) { secretWord[i] = word[i]; check1--; }
 			else if (tryWord == word) { secretWord = word; check1--; }
-
+      
 			if (secretWord[i] == (char)219) {
 				SetConsoleCP(866);	SetConsoleOutputCP(866);
 				cout << secretWord[i] << " ";
