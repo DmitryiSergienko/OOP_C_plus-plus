@@ -125,4 +125,5 @@ int main() {
 		writeText("Statistics.txt", text);
 	}
 	delete[] temp;
+
 }
